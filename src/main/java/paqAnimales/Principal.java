@@ -4,13 +4,17 @@ public class Principal {
 
     public static void main(String[] args) {
 
-//                Animal
-//                  |
-//                  |
-//               Mamifero
-//              /       \
-//             /         \        
-//        Perro          Gato
+/*
+Esquema de clases de reino-animal        
+                  Animal
+                    |
+                    |
+                Mamifero
+                /       \
+               /         \        
+          Perro          Gato
+*/
+
 
         Animal ani = new Animal();
 
