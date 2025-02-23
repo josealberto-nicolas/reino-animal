@@ -16,24 +16,24 @@ Esquema de clases de reino-animal
 */
 
 
-        Animal ani = new Animal();
+        Animal animal = new Animal("Animal general");
 
-        Mamifero mami = new Mamifero();
+        Mamifero mami = new Mamifero("Mamifero");
 
-        Perro toby = new Perro();
+        Perro toby = new Perro("Toby");
 
-        Gato isidoro = new Gato();
-        isidoro.pelos = 4;
+        Gato isidoro = new Gato("Isidoro");
+        isidoro.setPelos(4);
 
-        ani = isidoro;
+        animal = isidoro;
 
         Gato g;
-        g = (Gato) ani;
-        System.out.println("pelos de gato: " + g.pelos);
+        g = (Gato) animal;
+        System.out.println("pelos de gato: " + g.getPelos());
 
         Animal array[] = new Animal[4];
 
-        array[0] = ani;
+        array[0] = animal;
         array[1] = mami;
         array[2] = toby;
         array[3] = isidoro;

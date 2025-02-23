@@ -1,6 +1,13 @@
 package paqAnimales;
 
 public class Perro extends Mamifero {
+    
+    // Constructor que pasa el nombre a la clase padre (Mamifero)
+    public Perro(String nombre) {
+        super(nombre);
+    }
+    
+ 
 
     @Override
     void dormir() {
@@ -15,13 +22,16 @@ public class Perro extends Mamifero {
         System.out.println("Es un sonido ronco y sostenido");
     }
 
-    @Override
-    void relacionar(Animal p) {
-        System.out.println("Con el perro: " + p.nombre);
+   @Override
+    public String toString() {
+        return "Animal [nombre=" + getNombre() + "]";
     }
 
+
     String ToString() {
-        return this.nombre;
+        return this.getNombre();
     }
+    
+
 
 }

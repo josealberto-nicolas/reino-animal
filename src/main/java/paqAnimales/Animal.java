@@ -2,7 +2,12 @@ package paqAnimales;
 
 public class Animal {
 
-    String nombre;
+    private String nombre;
+    
+     // Constructor
+    public Animal(String nombre) {
+        this.nombre = nombre;
+    }
 
     void comer() {
         System.out.println("Necesita comer diarimente para sobrevivir");
@@ -18,5 +23,19 @@ public class Animal {
 
     void relacionar(Animal a) {
         System.out.println("Con el animal: " + a.nombre);
+    }
+    
+    public String getNombre(){
+        return nombre;
+    }
+    
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+    
+   
+    @Override
+    public String toString(){
+        return "Animal [nombre=" + nombre + "]";
     }
 }

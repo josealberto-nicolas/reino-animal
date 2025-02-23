@@ -11,4 +11,5 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <exec.mainClass>paqAnimales.Principal</exec.mainClass>
     </properties>
+    <name>es.iesjoseplanes.ed1dawdist.tarea4</name>
 </project>
